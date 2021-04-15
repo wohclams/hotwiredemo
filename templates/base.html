@@ -6,8 +6,11 @@
 	<title>Hotwire Demo</title>
 
 	<script type="module">
-		import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+		//import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+		import * as Turbo from "{{url_for('static', filename='turbo_load.js')}}";
 	  </script>
+
+	
 	{% endblock %}
 </head>
 <body>
