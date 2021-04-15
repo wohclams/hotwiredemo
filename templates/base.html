@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% block head %}
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+	<title>Hotwire Demo</title>
+
+	<script type="module">
+		import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+	  </script>
+	{% endblock %}
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Hotwire Demo App</h1>
+		</header>
+		<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li></li><a href="/about/">About this Site</a></li>
+			<li></li><a href="/slow/">A really slow page</a></li>
+		</ul>
+		</nav>
+		<main>
+		{% block main %}
+		{% endblock %}
+		</main>
+	</div>
+
+
+	{% block script %}
+	{% endblock %}
+</body>
+</html>

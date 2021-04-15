@@ -1,0 +1,37 @@
+body {
+
+}
+
+#container {
+	margin: 10px auto 10px auto;
+	width: 800px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 10px 0 10px 0;
+	padding: 0;
+	padding-bottom: 4px;
+	border-bottom: solid 1px #ff6600;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #ff6600;
+	padding-bottom: 4px;
+}
+
+nav a:hover {
+	border-bottom: solid 1px #000;
+	color: #000;
+}
+
+form.edit-form {
+	margin: 10px 0px 10px 0px;
+	background: #eee;
+}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block main %}
+	<h2>Homepage</h2>
+	<p>Current timestamp: {{current_time}}</p>
+	<turbo-frame id="extra-data">
+		<a href="/extra-data/">Load data</a>
+	</turbo-frame>
+	<turbo-frame id="comment-list" src="/comments">
+	</turbo-frame>
+{% endblock %}

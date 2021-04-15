@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<turbo-frame id="comment-num-{{comment.id}}">
+	<h5>Comment #{{comment.id}}</h5>
+<form class="edit-form" method="put" action="/comments/{{comment.id}}/edit/" >
+	<input type="text" value="{{comment.text}}" name="text">
+	<input type="submit">
+</form>
+</turbo-frame>
+
+{% endblock %}

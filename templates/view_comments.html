@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<turbo-frame id="comment-list">
+    <h3>Add Comment</h3>
+
+    <form action="/comments/" method="post">
+        <input type="text" placeholder="Comment" name="text">
+        <button type="submit">Submit Comment</button>
+    </form>
+    {% for comment in comments %}
+    {% include '_comment.html' %}
+    {% endfor %}
+
+</turbo-frame>
+{% endblock %}
